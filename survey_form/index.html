@@ -1,0 +1,78 @@
+<html>
+	<head>
+		<title>Stellar by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="main.css" />
+		<noscript><link rel="stylesheet" href="main.css" /></noscript>
+	</head>
+
+    <body>
+    <div class="container">
+  <div>
+    <h1 id="title">Holiday Survey Form</h1>
+    <p id="description">We can help you find your next dream destination!</p>
+  </div>
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name" class="input-text">Name</label>
+      <input id="name" type="text" name="name" placeholder="Enter your name" required class="form-control" />
+    </div>
+    <div>
+      <label id="email-label" for="email" class="input-text">Email</label>
+      <input id="email" name="email" type="email" placeholder="Enter your email" class="form-control" required />
+    </div>
+    <div>
+      <label id="number-label" for="number" class="input-text">Age</label>
+      <input id="number" name="age" type="number" min="16" max="120" placeholder="Age" class="form-control" />
+    </div>
+    <div>
+      <label for="dropdown" id="dropdown-label" class="input-text">Which of the following holidays are you interested in?</label>
+      <select value="type" id="dropdown" class="form-control" required>
+        <option disabled selected value>Select type</option>
+        <option value="luxury">Luxury</option>
+        <option value="all-inclusive">All-inclusive</option>
+        <option value="honeymoon">Honeymoon</option>
+        <option value="family">Family</option>
+        <option value="city-break">City break</option>
+        <option value="activity">Activity</option>
+        <option value="beach">Beach</option>
+      </select>
+    </div>
+    <div>
+      <p>When are you planning on booking your next holiday?</p>
+      <label>
+        <input name="date" type="radio" value="now" class="input-radio" />Now</label>
+      <label>
+        <input name="date" value="one-to-three" type="radio" class="input-radio" />1-3 months time</label>
+      <label>
+        <input name="date" value="three-to-six" type="radio" class="input-radio" />3-6 months time</label>
+      <label>
+        <input name="date" value="six-to-twelve" type="radio" class="input-radio" />6-12 months time</label>
+    </div>
+    <div class="countries">
+      <p>Which countries have you visited before?</p>
+      <label>
+        <input name="visited" value="united-states" type="checkbox" class="input-checkbox" />United States</label>
+      <label>
+        <input name="visited" value="brazil" type="checkbox" class="input-checkbox" />Brazil</label>
+      <label>
+        <input name="visited" value="italy" type="checkbox" class="input-checkbox" />Italy</label>
+      <label>
+        <input name="visited" value="south-africa" type="checkbox" class="input-checkbox" />South-Africa</label>
+      <label>
+        <input name="visited" value="thailand" type="checkbox" class="input-checkbox" />Thailand</label>
+      <label>
+        <input name="visited" value="australia" type="checkbox" class="input-checkbox" />Australia</label>
+    </div>
+    <div>
+      <p>Additional comments</p>
+      <textarea id="comments" placeholder="Please enter your comments here..." name="comments" class="input-textarea">
+      </textarea>
+    </div>
+      <div>
+        <button type="submit" id="submit" class="submit-button">Submit</button>
+      </div>
+      </form>
+    </div>
+    </body>
