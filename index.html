@@ -1,14 +1,15 @@
 <!DOCTYPE HTML>
 
-<html>
+<html lang="en">
 	<head>
 		<title>Anna's Portfolio</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="./main/stylesheet.css" />
-		<script src="https://kit.fontawesome.com/b267fde2a0.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/b267fde2a0.js" crossorigin="anonymous"></script>
 	</head>
 <body>
+<header>
 <nav id="navbar">
     <ul>
       <li><a href="#welcome-section">About me</a></li>
@@ -16,45 +17,63 @@
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
+  </header>
   <main>
     <section id="welcome-section">
-      <h1>Hi, I am Anna</h1>
-      <p>a web developer</p>
+    <div class="box-container">
+      <div class="box-one">
+          <h1>Anna <br> Tyrka</h1>
+      </div>
+      <div class="box-two">
+        <h2 class="box-three">a web developer with an engineering background</h2>
+        <div class= "box-four">
+        <img class="icon" src="./assets/icons/icons8-html-100.png">
+        <img class="icon" src="./assets/icons/icons8-css-100.png">
+        <img class="icon" src="./assets/icons/icons8-javascript-100.png">
+        <img class="icon" src="./assets/icons/icons8-react-native-100.png">
+        <img class="icon" src="./assets/icons/icons8-python-100.png">
+        <img class="icon" src="./assets/icons/icons8-sql-100.png">
+     </div>
+     </div>
+     </div>
+     <div class="arrow">
+     <a href="#projects">
+     <img class="arrow-down" src="./assets/icons/icons8-low-priority-100-2.png" alt="arrow down">
+     </a>
+     </div>
     </section> 
     <section id="projects">
-      <h2>and these are my projects</h2>
       <div class=grid-container>
-        <a href="https://codepen.io/AnnaxT/full/MWJMqLp" target="_blank" class="profile-link">
-          <img src="https://res.cloudinary.com/dpqddebfg/image/upload/v1621460585/Codepen/tribute_page_kgpn70.png" alt="tribute page">
+        <a href="./tribute_page/tribute_page.html" target="_blank" class="profile-link">
+          <img src="./assets/images/tribute_page.png">
           <p class="project-tile">Tribute Page</p>
         </a>
-        <a href="https://codepen.io/AnnaxT/full/eYgqdoW" target="_blank" class="profile-link">
-          <img src="https://res.cloudinary.com/dpqddebfg/image/upload/v1621460585/Codepen/survey_form_ascfos.png" alt="survey form">
+        <a href="./survey_form/index.html" target="_blank" class="profile-link">
+          <img src="./assets/images/survey_form.png">
           <p class="project-tile">Survey Form</p>
         </a>
         <a href="https://codepen.io/AnnaxT/full/RwpwRqG" target="_blank" class="profile-link">
-          <img src="https://res.cloudinary.com/dpqddebfg/image/upload/v1621460585/Codepen/product_landing_page_cyz6o4.png" alt="product landing page">
+          <img src="./assets/images/product_landing_page.png">
           <p class="project-tile">Product Landing Page</p>
         </a>
         <a href="https://codepen.io/AnnaxT/full/vYxLrgX" target="_blank" alt="technical documentation page" class="profile-link">
-          <img src="https://res.cloudinary.com/dpqddebfg/image/upload/v1621460585/Codepen/javascript_acc61b.png">
+          <img src="./assets/images/technical_documentation_page.png">
           <p class="project-tile">Technical Documentation Page</p>
         </a>
       </div>
     </section>
     <section id="contact">
-      <h2>Let's work together</h2>
-      <p>Get in touch!</p>
+      <h2></i>Let's work together</h2>
+      <p>Feel free to get in touch with me!</p>
       <div class="contact-links">
-        <a href="https://www.facebook.com" target="_blank" class="contact-link-btn"><i class="fab fa-facebook-square"></i>Facebook</a>
+        <a href="https://www.facebook.com/anna.tyrka.5/" target="_blank" class="contact-link-btn"><i class="fab fa-facebook-square"></i>Facebook</a>
         <a href="https://github.com/AnnaxT" target="_blank" id="profile-link" class="contact-link-btn"><i class="fab fa-github"></i>GitHub</a>
-        <a href="https://twitter.com" target="_blank" class="contact-link-btn"><i class="fab fa-twitter"></i>Twitter</a>
-        <a href="https://gmail.com" target="_blank" class="contact-link-btn"><i class="fas fa-envelope"></i>Email</a>    
+        <a href="mailto:a.m.tyrka@gmail.com" target="_blank" class="contact-link-btn"><i class="fas fa-envelope"></i>Email</a>    
       </div>  
     </section>
     <footer>
       <div class="border-radius"></div>
-      <p>Copyright <i class="far fa-copyright"></i> Anna</p>
+      <p><small><i class="far fa-copyright"></i> 2021 AnnaxT.github.io | by Anna Tyrka</small></p>
     </footer>
   </main>
 </body>
