@@ -1,7 +1,11 @@
 @import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400';
-* {
+*,
+*:before,
+*:after {
     padding: 0;
     margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
   /*linear-gradient(45deg, #e37682 15%, #5f4d93 85%)*/
@@ -13,7 +17,11 @@
    background: #c4c2c2  ;
     text-align: justify;
   }
-
+.wrapper {
+  margin: 0 auto;
+  padding:0 30px;
+  width: 960px;
+}
   header {
     font-family: Source+Sans+Pro,sans-serif;
     text-align: center;
@@ -89,7 +97,7 @@ padding: 7.5rem;
     padding: 0.75rem 0;
   }
   @media (max-width: 768px) {
-    
+
     .container {
     
         padding: 1 rem;
