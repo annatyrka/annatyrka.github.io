@@ -1,8 +1,8 @@
+<!DOCTYPE html>
 <html lang="en">
 	<head>
 		<title>Survey Form</title>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="./assets/main.css" />
 	</head>
 
@@ -12,10 +12,10 @@
     <h1 id="title">Holiday Survey Form</h1>
     <p id="description">We can help you find your next dream destination!</p>
   </div>
-  <form id="survey-form">
+  <form id="survey-form" name="survey-form">
     <div class="form-group">
       <label id="name-label" for="name" class="input-text">Name</label>
-      <input id="name" type="text" name="name" placeholder="Enter your name" required class="form-control" />
+      <input id="name" type="text" name="name" placeholder="Enter your name" class="form-control" required/>
     </div>
     <div>
       <label id="email-label" for="email" class="input-text">Email</label>
@@ -23,7 +23,7 @@
     </div>
     <div>
       <label id="number-label" for="number" class="input-text">Age</label>
-      <input id="number" name="age" type="number" min="16" max="120" placeholder="Age" class="form-control" />
+      <input id="number" name="age" type="number" min="16" max="120" placeholder="Age" class="form-control" required/>
     </div>
     <div>
       <label for="dropdown" id="dropdown-label" class="input-text">Which of the following holidays are you interested in?</label>
@@ -74,4 +74,6 @@
       </div>
       </form>
     </div>
+    <script> type="text/javascript" scr=".js/survey_form.js" </script>
     </body>
+    </html>
