@@ -146,10 +146,7 @@ textarea {
     width: 97.5%;
   }
   form p {
-    font-size: 0.5rem;
+    font-size: 1.35rem;
     padding: 0.5rem 0;
-  }
-  .input-text {
-    font-size: 1.5rem;
   }
 }
