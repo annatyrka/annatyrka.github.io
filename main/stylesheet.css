@@ -359,33 +359,16 @@ footer i {
   }
 }
 
-@media (max-width: 475px) {
-  .contact-links {
-    flex-direction: column;
-  }
-  .contact-links a {
-    font-size: 1.5rem;
-    padding: 0.75rem;
-  }
-  nav a {
-    font-size: 1.5rem;
-    margin: 2rem 1rem;
-  }
-  h1 {
-    font-size: 3rem;
-  }
-}
-
 @media (max-width: 1000px) {
   nav {
-    max-height: 150px;
+    max-height: 170px;
     height: 100%;
     padding: 0 2rem;
   }
 
   nav a {
-    font-size: 2rem;
-    margin: 0;
+    font-size: 2.5rem;
+    margin: 0 0.55rem;
   }
   .box-container {
     display: flex;
@@ -410,10 +393,11 @@ footer i {
 
   h1 {
     font-size: 12rem;
-    font-weight: 700;
+    font-weight: 100;
   }
   h2 {
     font-size: 4rem;
+    font-weight: 100;
   }
 
   .icon {
@@ -423,32 +407,33 @@ footer i {
   }
 
   .arrow-down {
-    width: 5rem;
+    width: 5.5rem;
   }
 
   /* -- projects -- */
 
   .grid-container {
     grid-template-columns: repeat(auto-fill, 45rem);
+    margin: 0 2rem;
   }
 
   .project-title {
-    font-size: 2.25rem;
+    font-size: 2.75rem;
   }
 
   .project img {
-    height: 20rem;
-    width: 35rem;
+    height: 25rem;
+    width: 37rem;
     object-fit: cover;
     margin: 0.5rem auto;
-    border-radius: 5px;
+    border-radius: 10px;
   }
 
   .project-bottom {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
   .project-bottom img {
-    height: 65px;
+    height: 75px;
     width: auto;
   }
 
@@ -460,15 +445,17 @@ footer i {
     width: 80%;
   }
   #about-me h2 {
-    font-size: 2.75rem;
+    font-size: 3.5rem;
   }
 
   #about-me p {
+    text-align: justify;
     font-size: 2.5rem;
   }
 
   #contact h2 {
     font-size: 3.25rem;
+    font-weight: 100;
   }
   .contact-links a {
     font-size: 2.5rem;
