@@ -16,26 +16,34 @@
 }
 
 body {
-  background-color: #1f1f1f;
+  background-color: #1f1d1d;
   font-family: "Roboto", sans-serif;
   color: var(--mainwhite);
+}
+
+.wrapper {
+  max-width: 1650px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #1f1f1f;
 }
 
 nav {
   background-image: linear-gradient(80deg, #002080, #bf408a);
   position: fixed;
+  max-width: 1650px;
   width: 100%;
   max-height: 110px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-around;
   z-index: 1;
+  align-items: center;
 }
 
 nav ul {
   display: flex;
   list-style: none;
   margin: 0;
-  margin-right: 6.5rem;
   padding: 0;
 }
 
@@ -46,15 +54,46 @@ nav a {
   font-size: 1.5rem;
   color: var(--main-white);
 }
+
+nav a:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+
+nav a:not(:hover) {
+  transform: scale(1);
+  transition: transform 0.3s ease-out;
+}
+
 main {
   position: relative;
   top: 30px;
 }
 
+/* --- welcome section --- */
+
+#welcome-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-top: 150px;
+  padding-bottom: 20px;
+  width: 100%;
+  height: 100vh;
+}
+
+#welcome-section > p {
+  font-size: 1.2rem;
+  margin: 2rem 4rem;
+  text-align: justify;
+  font-weight: 600;
+  color: var(--mainwhite);
+}
+
 .box-container {
   display: grid;
   grid-template-columns: minmax(10rem, 40rem) auto;
-  margin: 1rem 3rem 4rem 3rem;
+  margin: 0 2rem;
 }
 .box-one {
   justify-self: center;
@@ -63,9 +102,11 @@ main {
 .box-two {
   display: grid;
   grid-template-rows: auto auto;
+  justify-content: center;
+  align-items: center;
 }
+
 .box-three {
-  align-self: center;
   color: var(--green2);
   font-style: italic;
 }
@@ -98,6 +139,7 @@ main {
 /* --- arrow-down ---*/
 .arrow-down {
   width: 2.5rem;
+  justify-self: flex-end;
   height: auto;
 }
 .arrow-down:hover {
@@ -114,21 +156,6 @@ h2 {
   font-size: 2rem;
   color: var(--mainwhite);
   padding-top: 2rem 0;
-}
-#welcome-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
-  height: 100vh;
-}
-
-#welcome-section > p {
-  font-size: 1.2rem;
-  margin: 2rem 4rem;
-  text-align: justify;
-  font-weight: 600;
-  color: var(--mainwhite);
 }
 
 /* --- projects --- */
@@ -181,10 +208,7 @@ h2 {
   height: 35px;
   width: auto;
 }
-.project-bottom i {
-  font-size: 2rem;
-  margin: auto 0.25rem;
-}
+
 .source_code {
   text-decoration: none;
   color: white;
@@ -235,7 +259,7 @@ h2 {
   margin-bottom: 2rem;
 }
 
-/* arrow up - rotate*/
+/* --- arrow up - rotate --- */
 .arrow-up {
   transform: rotate(180deg);
   display: block;
@@ -328,6 +352,13 @@ footer i {
   vertical-align: middle;
 }
 
+@media (max-width: 900px) {
+  .box-container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
 @media (max-width: 475px) {
   .contact-links {
     flex-direction: column;
@@ -342,5 +373,108 @@ footer i {
   }
   h1 {
     font-size: 3rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  nav {
+    max-height: 150px;
+    height: 100%;
+    padding: 0 2rem;
+  }
+
+  nav a {
+    font-size: 2rem;
+    margin: 0;
+  }
+  .box-container {
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .box-two {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+  }
+
+  .box-three {
+    margin: 0 auto;
+  }
+
+  h1 {
+    font-size: 12rem;
+    font-weight: 700;
+  }
+  h2 {
+    font-size: 4rem;
+  }
+
+  .icon {
+    display: inline-block;
+    height: 125px;
+    margin: 0 5px;
+  }
+
+  .arrow-down {
+    width: 5rem;
+  }
+
+  /* -- projects -- */
+
+  .grid-container {
+    grid-template-columns: repeat(auto-fill, 45rem);
+  }
+
+  .project-title {
+    font-size: 2.25rem;
+  }
+
+  .project img {
+    height: 20rem;
+    width: 35rem;
+    object-fit: cover;
+    margin: 0.5rem auto;
+    border-radius: 5px;
+  }
+
+  .project-bottom {
+    font-size: 2rem;
+  }
+  .project-bottom img {
+    height: 65px;
+    width: auto;
+  }
+
+  /* -- about me -- */
+  #about-me {
+    height: 80vh;
+  }
+  .about-me-container {
+    width: 80%;
+  }
+  #about-me h2 {
+    font-size: 2.75rem;
+  }
+
+  #about-me p {
+    font-size: 2.5rem;
+  }
+
+  #contact h2 {
+    font-size: 3.25rem;
+  }
+  .contact-links a {
+    font-size: 2.5rem;
+  }
+
+  footer {
+    font-size: 2.5rem;
   }
 }
