@@ -9,15 +9,21 @@
 	</head>
 <body>
 <div class="wrapper">
-<header>
-<nav id="navbar">
-      <a href="#welcome-section">Anna Tyrka</a>
-    <ul>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#about-me">About me</a></li>
-      <li><a href="#">Resume</a></li>
-      <li><a href="#contact">Contact</a></li>
+<header class="header">
+<nav class="navbar">
+      <a href="#">Anna Tyrka</a>
+    <ul class="nav-menu">
+      <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+      <li class="nav-item"><a href="#about-me" class="nav-link">About me</a></li>
+      <li class="nav-item"><a href="#" class="nav-link">Resume</a></li>
+      <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
     </ul>
+    <div class="hamburger">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+
   </nav>
   </header>
   <main>
@@ -91,7 +97,7 @@
         <div class="project">
         <p class="project-title">Survey Form</p>
             <a href="./survey_form/index.html" target="_blank" class="profile-link">
-          <img src="./assets/images/survey_form.png">
+          <img class="project-image" src="./assets/images/survey_form.png">
         </a>
           <div class="project-bottom">
           <a href="https://github.com/AnnaxT/AnnaxT.github.io/tree/main/survey_form" target="_blank" class="source_code">Source code</a>
@@ -106,7 +112,7 @@
         <div class="project">
         <p class="project-title">Quote Generator</p>
         <a href="./quote-machine/public/index.html" target="_blank" alt="quote generator" class="profile-link">
-          <img src="./assets/images/quote_generator.png">
+          <img class="project-image" src="./assets/images/quote_generator.png">
         </a>
           <div class="project-bottom">
           <a href="#" target="_blank" class="source_code">Source code</a>
@@ -121,7 +127,7 @@
         <div class="project">
         <p class="project-title">Calculator</p>
          <a href="./react-calculator/public/index.html" target="_blank" alt="calculator" class="profile-link">
-          <img src="./assets/images/react_calculator.png">
+          <img class="project-image" src="./assets/images/react_calculator.png">
         </a>
           <div class="project-bottom">
           <a href="https://github.com/AnnaxT/AnnaxT.github.io/tree/main/react-calculator" target="_blank" class="source_code">Source code</a>
@@ -136,7 +142,7 @@
                 <div class="project">
         <p class="project-title">To Be Done</p>
          <a href="./react-calculator/public/index.html" target="_blank" alt="calculator" class="profile-link">
-          <img src="./assets/images/technical_documentation_page.png">
+          <img class="project-image" src="./assets/images/technical_documentation_page.png">
         </a>
           <div class="project-bottom">
           <p>Source code</p>
@@ -197,5 +203,6 @@
   </main>
 
   </div>
+   <script type="text/javascript" src="./main/portfolio.js"></script>
 </body>
 </html>
