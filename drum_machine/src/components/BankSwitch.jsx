@@ -7,8 +7,6 @@ import PropTypes from 'prop-types';
 
 const BankSwitch = ({ toggleBank, bank, disabled, checked }) => {
 
-    
-
     const displayBank = bank === 'bankOne' ? 'Bank 1' : 'Bank 2';
 
     return (
@@ -22,6 +20,7 @@ const BankSwitch = ({ toggleBank, bank, disabled, checked }) => {
             checked = {checked}
         />
     </div>
+   
     )
 }
 

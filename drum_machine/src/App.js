@@ -50,17 +50,7 @@ function App() {
         main: color[500]
       }
   },
-//     components: {
-//       MuiSwitch: {
-//         defaultProps:{
-//           disabled: {
-//             color: purple[500],
-//             '& + $bar': {
-//             backgroundColor: purple[500],
-//       },
-//     }}
-//   }
-// }
+
 });
 
   // toggle color
