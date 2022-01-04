@@ -26,14 +26,18 @@
 
   </nav>
   </header>
+    <!-- The video -->
+    <video id="background-video" autoplay muted loop playsinline >
+          <source src="assets/animation/star_burst.mp4" type="video/mp4">
+          <source src="assets/animation/star_burst.mov" type="video/mov">
+          <source src="assets/animation/star_burst.mp4" type="video/webm">
+    </video>
   <main>
+ 
    <!-- welcome -->
     <section id="welcome-section">
   
-    <!--img class="icon" src="../../animation/IMG_0280.JPG" width="600px">
-    <video autoplay muted loop>
-          <source src="../../animation/Bokeh_Background_Loop.mp4" type="video/mp4" >
-    </video -->
+   
 
     <div class="box-container">
       <div class="box-one">
@@ -45,20 +49,20 @@
         </div>
         <div class= "box-four">
       
-        <img class="icon" src="https://img.icons8.com/color/96/000000/javascript--v1.png"/>
-        <img class="icon" src="https://img.icons8.com/color/96/000000/react-native.png"/>
-        <img class="icon" src="https://img.icons8.com/color/96/000000/python--v1.png"/>
-        <img class="icon" src="https://img.icons8.com/color/96/000000/html-5--v1.png"/>
-        <img class="icon" src="https://img.icons8.com/color/96/000000/css3.png"/>
-        <img class="icon" src="https://img.icons8.com/color/96/000000/sass.png"/>   
-     
+      <div class="icon-description">   <img class="icon" src="https://img.icons8.com/color/96/000000/javascript--v1.png"/> <p> JavaScript</p> </div>
+        <div class="icon-description">  <img class="icon" src="https://img.icons8.com/color/96/000000/react-native.png"/> <p>React</p></div>
+        <div class="icon-description"> <img class="icon" src="https://img.icons8.com/color/96/000000/material-ui.png"/><p> MUI </p> </div>
+        <div class="icon-description">  <img class="icon" src="https://img.icons8.com/color/96/000000/html-5--v1.png"/> <p>HTML</p></div>
+        <div class="icon-description">  <img class="icon" src="https://img.icons8.com/color/96/000000/css3.png"/> <p>CSS</p></div>
+        <div class="icon-description">  <img class="icon" src="https://img.icons8.com/color/96/000000/sass.png"/>  <p>Sass </p></div>
+         <div class="icon-description">  <img class="icon" src="https://img.icons8.com/color/96/000000/python--v1.png"/> <p>Python</p></div>
+        
 
      </div>
      </div>
      </div>
 
-     <!-- arrow down -->
-     <div class="arrow">
+     <!-- arrow down --> 
         <a href="#projects">
         <img class="arrow-down" src="./assets/icons/icons8-low-priority-100-2.png" alt="arrow down">
      </a>
@@ -69,20 +73,9 @@
     <section id="projects">
       <div class=grid-container>
 
-      <div class="project">
-        <p class="project-title">To-Do List</p>
-        <a href="./to_do_list/toDoList.html" target="_blank" class="profile-link">
-          <img src="./assets/images/to-do-list.png">
-        </a>
-          <div class="project-bottom">
-          <a href="https://github.com/AnnaxT/AnnaxT.github.io/tree/main/to_do_list" target="_blank" class="source_code">Source code</a>
-          <div>
-              <img src="https://img.icons8.com/color/48/000000/javascript--v1.png"/>
-              <img src="https://img.icons8.com/color/48/000000/css3.png"/>
-           </div>
-          </div>
-        </div>
 
+
+        <!-- Product Landing Page --> 
         <div class="project">
         <p class="project-title">Product Landing Page</p>
                 <a href="./product_landing_page/plant_store.html" target="_blank" class="profile-link">
@@ -93,40 +86,63 @@
           <div>
                 <img src="https://img.icons8.com/color/48/000000/javascript--v1.png"/>
               <img src="https://img.icons8.com/color/48/000000/css3.png"/>
+              <img src="https://img.icons8.com/color/48/000000/html-5--v1.png"/>
            </div>
           </div>
         </div>
 
+                <!-- Drum Machine --> 
         <div class="project">
-        <p class="project-title">Survey Form</p>
-            <a href="./survey_form/index.html" target="_blank" class="profile-link">
-          <img class="project-image" src="./assets/images/survey_form.png">
+        <p class="project-title">Drum Machine</p>
+         <a href="https://hopeful-booth-d5cb95.netlify.app" target="_blank" alt="drum machine" class="profile-link">
+          <img class="project-image" src="./assets/images/drum_machine.png">
         </a>
           <div class="project-bottom">
-          <a href="https://github.com/AnnaxT/AnnaxT.github.io/tree/main/survey_form" target="_blank" class="source_code">Source code</a>
-          <div>
-                <img src="https://img.icons8.com/color/48/000000/javascript--v1.png"/>
-
-              <img src="https://img.icons8.com/color/48/000000/css3.png"/> 
-           </div>
-          </div>
-        </div>
-
-        <div class="project">
-        <p class="project-title">Quote Generator</p>
-        <a href="./quote-machine/public/index.html" target="_blank" alt="quote generator" class="profile-link">
-          <img class="project-image" src="./assets/images/quote_generator.png">
-        </a>
-          <div class="project-bottom">
-          <a href="#" target="_blank" class="source_code">Source code</a>
+           <a href="https://github.com/AnnaxT/drum-machine" target="_blank" class="source_code">Source code</a>
           <div>
               <img src="https://img.icons8.com/color/48/000000/react-native.png"/>
               <img src="https://img.icons8.com/color/48/000000/javascript--v1.png"/>
-              <img src="https://img.icons8.com/color/48/000000/sass.png"/>
+              <img src="./assets/icons/icons8-material-ui-48.png"/>
            </div>
           </div>
         </div>
 
+                <!-- Quote Generator --> 
+        <div class="project">
+        <p class="project-title">Quote Generator</p>
+        <a href="https://jolly-cray-2209a0.netlify.app" target="_blank" alt="quote generator" class="profile-link">
+          <img class="project-image" src="./assets/images/quote_generator.png">
+        </a>
+          <div class="project-bottom">
+          <a href="https://github.com/AnnaxT/random-quote-machine" target="_blank" class="source_code">Source code</a>
+          <div>
+              <img src="https://img.icons8.com/color/48/000000/react-native.png"/>
+               <img src="https://img.icons8.com/color/48/000000/javascript--v1.png"/>
+              <img src="https://img.icons8.com/color/48/000000/material-ui.png"/>
+           </div>
+          </div>
+        </div>
+
+        <!-- Pomodoro Clock --> 
+        <div class="project">
+        <p class="project-title">Pomodoro Clock</p>
+            <a href="https://silly-sinoussi-252177.netlify.app" target="_blank" class="profile-link">
+          <img class="project-image" src="./assets/images/pomodoro_clock.png">
+        </a>
+          <div class="project-bottom">
+          <a href="https://github.com/AnnaxT/pomodoro-clock" target="_blank" class="source_code">Source code</a>
+          <div>
+              <img src="https://img.icons8.com/color/48/000000/react-native.png"/>
+               <img src="https://img.icons8.com/color/48/000000/javascript--v1.png"/>
+              <img src="https://img.icons8.com/color/48/000000/material-ui.png"/>
+             
+           </div>
+          </div>
+        </div>
+
+
+
+        <!-- Calculator --> 
         <div class="project">
         <p class="project-title">Calculator</p>
          <a href="./react-calculator/" target="_blank" alt="calculator" class="profile-link">
@@ -142,17 +158,20 @@
           </div>
         </div>
 
-                <div class="project">
-        <p class="project-title">To Be Done</p>
-         <a href="./react-calculator/public/index.html" target="_blank" alt="calculator" class="profile-link">
-          <img class="project-image" src="./assets/images/technical_documentation_page.png">
+
+
+              <!-- To-do list -->
+      <div class="project">
+        <p class="project-title">To-Do List</p>
+        <a href="./to_do_list/toDoList.html" target="_blank" class="profile-link">
+          <img src="./assets/images/to-do-list.png">
         </a>
           <div class="project-bottom">
-          <p>Source code</p>
+          <a href="https://github.com/AnnaxT/AnnaxT.github.io/tree/main/to_do_list" target="_blank" class="source_code">Source code</a>
           <div>
-              <img src="https://img.icons8.com/color/48/000000/react-native.png"/>
               <img src="https://img.icons8.com/color/48/000000/javascript--v1.png"/>
-              <img src="https://img.icons8.com/color/48/000000/sass.png"/>
+              <img src="https://img.icons8.com/color/48/000000/css3.png"/>
+              <img src="https://img.icons8.com/color/48/000000/html-5--v1.png"/>
            </div>
           </div>
         </div>

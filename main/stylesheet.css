@@ -16,15 +16,14 @@
 }
 
 body {
-  background-color: #1f1d1d;
   font-family: "Roboto", sans-serif;
   color: var(--mainwhite);
+  background-color: #1f1d1d;
 }
 
 .wrapper {
   max-width: 1650px;
   width: 100%;
-  background-color: #1f1f1f;
   margin: 0 auto;
 }
 
@@ -83,18 +82,22 @@ nav a:not(:hover) {
   transition: transform 0.3s ease-out;
 }
 
-main {
-  position: relative;
-  top: 30px;
-}
-
 /* --- video --- */
 
 video {
   position: fixed;
-  z-index: 2;
-  min-width: 100vw;
-  min-height: 100vh;
+  height: 100vh;
+  top: 0;
+  object-fit: fill;
+  max-width: 1650px;
+  width: 100vw;
+  z-index: -1;
+  opacity: 0.3;
+}
+
+main {
+  position: relative;
+  top: 30px;
 }
 
 /* --- welcome section --- */
@@ -104,13 +107,14 @@ video {
   flex-direction: column;
   padding: 150px 100px 20px 100px;
   height: 100vh;
+  width: 100%;
   justify-content: space-around;
   align-items: center;
 }
 
 .box-container {
   display: grid;
-  grid-template-columns: minmax(10rem, 50rem) auto;
+  grid-template-columns: repeat(2, 1fr);
   justify-self: center;
 }
 .box-one {
@@ -121,7 +125,7 @@ video {
 .box-two {
   display: grid;
   grid-template-rows: auto auto;
-  justify-content: center;
+  justify-self: center;
   align-items: center;
 }
 
@@ -130,25 +134,47 @@ video {
   font-style: italic;
   font-size: 3rem;
   margin-top: 3rem;
-  text-align: left;
+  text-align: center;
   letter-spacing: 3px;
   text-indent: 10px;
 }
 
+.box-four {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
 .icon {
   display: inline-block;
-  height: 80px;
-  margin: 0 5px;
+  height: 40px;
+  margin-right: 10px;
 }
 
-.box-two img:hover {
-  transform: translateY(1rem);
-  transition: transform ease-out 1s;
+.icon-description {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: solid white 1px;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px 10px;
+}
+.icon-description p {
+  font-weight: 700;
+  font-size: 20px;
 }
 
-.box-two img:not(hover) {
+.icon-description:hover {
+  transform: translateY(0.5rem);
+  transition: transform ease-out 0.5s;
+  cursor: pointer;
+}
+
+.icon-description:not(hover) {
   transform: translateY(0);
-  transition: transform ease-out 0.4s;
+  transition: transform ease-out 0.3s;
 }
 
 .arrow {
@@ -320,12 +346,15 @@ h2 {
   color: white;
   text-align: justify;
 }
-
+#about-me .arrow-down {
+  margin-top: 2rem;
+}
 /* --- contact --- */
 #contact {
   padding: 100px 0;
   text-align: center;
   width: 100%;
+  background-color: #1f1f1f;
 }
 
 #contact h2 {
@@ -368,6 +397,7 @@ footer {
   font-size: 1.5rem;
   border-style: solid;
   text-align: right;
+  background-color: #1f1f1f;
 }
 
 footer i {
@@ -395,6 +425,9 @@ footer i {
     justify-content: center;
     align-items: center;
   }
+  .box-one {
+    margin-right: 0;
+  }
 
   .box-two {
     height: 50%;
@@ -409,8 +442,14 @@ footer i {
     margin: 0 auto;
   }
 
+  .box-three h2 {
+    text-indent: 0px;
+    font-size: 4rem;
+    font-weight: 100;
+  }
+
   h1 {
-    font-size: 12rem;
+    font-size: 13rem;
     font-weight: 100;
   }
   h2 {
