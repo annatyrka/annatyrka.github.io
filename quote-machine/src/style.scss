@@ -1,0 +1,100 @@
+/* --- GLOBAL --- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* === APP === */
+.App {
+  --primary: cornflowerblue;
+  --primary-dark: rgb(84, 124, 197);
+
+  color: rgb(185, 172, 172);
+  background-color: var(--primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  transition: background-color 0.5s;
+
+  /* === QUOTE BOX === */
+  .QuoteBox {
+    text-align: center;
+    color: var(--primary);
+    background-color: #fff;
+    width: 40vw;
+    max-width: 50rem;
+    padding: 3rem;
+    box-shadow: 0 5rem 10rem rgba(0, 0, 0, 0.5);
+
+    @media (max-width: 768px) {
+      width: 75vw;
+    }
+
+    @media (max-width: 600px) {
+      width: 85vw;
+    }
+
+    @media (max-width: 450px) {
+      width: 100%;
+    }
+    /* === TEXT === */
+    .Text {
+      font-size: 1.5rem;
+      margin-bottom: 1vh;
+    }
+    /* === AUTHOR === */
+    .Author {
+      font-size: 1.5rem;
+      font-style: italic;
+      display: block;
+      text-align: right;
+      margin-bottom: 2.5rem;
+      margin-top: 1.5rem;
+    }
+    /* === BANNER === */
+    .Banner {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    /* === LINKS === */
+    .Links {
+      display: flex;
+      justify-content: left;
+      align-items: left;
+
+      @media (max-width: 450px) {
+        margin-bottom: 3vh;
+      }
+      i {
+        padding: 0 1rem;
+        font-size: 3.25rem;
+      }
+    }
+    .Button {
+      padding: 1rem;
+      background: var(--primary);
+      text-decoration: none;
+      color: #fff;
+      font-size: 1rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      transition: background-color 0.6s ease;
+      overflow: hidden;
+      border: none;
+      &:hover {
+        background: var(--primary-dark);
+      }
+    }
+  }
+}
