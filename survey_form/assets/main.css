@@ -70,6 +70,7 @@ h1 {
 #description {
   font-weight: 400;
   text-align: center;
+  padding: 0 2rem;
 }
 
 label {
@@ -140,15 +141,13 @@ textarea {
   line-height: inherit;
 }
 
-@media (max-width: 900px) {
+@media only screen and (max-width: 1000px) {
   form {
-    max-width: 80vw;
+    max-width: 90vw;
+    width: 100%;
   }
-}
-
-@media (max-width: 900px) {
   html {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 
   #title {

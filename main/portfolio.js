@@ -9,3 +9,6 @@ function mobileMenu() {
     hamburger.classList.toggle("active");
     navMenu.classList.toggle("active");
 }
+
+const vid = document.getElementById("background-video");
+vid.playbackRate = 0.75;
