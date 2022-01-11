@@ -412,7 +412,7 @@ footer i {
   .box-container {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 75vh;
     justify-content: space-evenly;
     align-items: center;
   }
@@ -435,7 +435,7 @@ footer i {
     margin-bottom: 25px;
   }
   .box-four {
-    margin-bottom: 25px;
+    margin-bottom: 0;
   }
 
   .icon {
@@ -445,6 +445,8 @@ footer i {
   }
   .arrow-down {
     width: 2.5rem;
+
+    margin-bottom: 1rem;
   }
 
   .grid-container {
@@ -532,6 +534,9 @@ footer i {
   .icon-description p {
     font-size: 1rem;
   }
+  .icon-description {
+    margin: 5px;
+  }
 
   .icon {
     height: 40px;
@@ -585,8 +590,13 @@ footer i {
     font-size: 2.25rem;
     font-weight: 100;
   }
+  .contact-links {
+    padding: 1rem;
+    flex-direction: column;
+  }
   .contact-links a {
-    font-size: 1.75rem;
+    font-size: 2rem;
+    margin: 0.5rem 0;
   }
 
   footer {
@@ -644,9 +654,6 @@ footer i {
   #contact h2 {
     font-size: 2rem;
     font-weight: 100;
-  }
-  .contact-links a {
-    font-size: 1.25rem;
   }
 
   footer {
