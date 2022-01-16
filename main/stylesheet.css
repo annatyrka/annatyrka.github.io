@@ -413,6 +413,10 @@ footer i {
     font-size: 1.75rem;
   }
 
+  video {
+    object-fit: cover;
+  }
+
   /* -- hamburger menu -- */
   .nav-menu {
     position: fixed;
