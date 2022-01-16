@@ -461,7 +461,7 @@ footer i {
     font-size: 4rem;
   }
   .box-three h2 {
-    font-size: 2rem;
+    font-size: 1.75rem;
     margin-top: 0;
   }
 
@@ -476,7 +476,7 @@ footer i {
 
   .icon-description {
     margin: 5px;
-    padding: 5px 10px;
+    padding: 7.5px 5px;
   }
 
   .icon-description p {
@@ -526,7 +526,7 @@ footer i {
     display: block;
     height: 100vh;
     height: fit-content;
-    margin-bottom: 1rem;
+    padding-bottom: 1rem;
   }
 
   .about-me-container {
@@ -621,9 +621,6 @@ footer i {
     font-size: 2rem;
   }
 }
-
-
-
 
 @media (orientation: landscape) and (max-width: 1024px) {
   nav {
