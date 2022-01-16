@@ -33,10 +33,11 @@ nav {
   max-width: 1650px;
   width: 100%;
   height: 95px;
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   z-index: 1;
   align-items: center;
+  justify-content: center;
 }
 
 .hamburger {
@@ -59,14 +60,16 @@ section {
 
 nav ul {
   display: flex;
-  margin: 0;
-  padding: 0;
 }
 
 nav li {
   list-style: none;
 }
 
+nav > a,
+nav ul {
+  justify-self: center;
+}
 nav a {
   display: block;
   margin: 2rem 1.5rem;
@@ -629,6 +632,7 @@ footer i {
 @media (orientation: landscape) and (max-width: 1024px) {
   nav {
     max-height: 90px;
+    grid-template-columns: 1fr 2fr;
   }
 
   .nav-menu {
