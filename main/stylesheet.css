@@ -143,7 +143,7 @@ main {
 
 .box-four {
   display: grid;
-  grid-template-columns: repeat(3, 11.5rem);
+  grid-template-columns: repeat(3, minmax(8rem, 12rem));
   justify-content: center;
   align-items: center;
 }
@@ -160,11 +160,12 @@ main {
   align-items: center;
   border: solid white 1px;
   border-radius: 5px;
-  margin: 10px;
-  padding: 10px 10px;
+  margin: 7.5px;
+  padding: 10px 5px;
 }
 .icon-description p {
-  font-size: 1.25rem;
+  font-size: 1.125rem;
+  font-weight: 900;
 }
 
 .icon-description:hover {
@@ -405,7 +406,10 @@ footer i {
   vertical-align: middle;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
+  video {
+    object-fit: cover;
+  }
   nav {
     height: 100px;
     padding: 0 2rem;
@@ -415,11 +419,6 @@ footer i {
   nav a {
     font-size: 1.75rem;
   }
-
-  video {
-    object-fit: cover;
-  }
-
   /* -- hamburger menu -- */
   .nav-menu {
     position: fixed;
@@ -453,7 +452,6 @@ footer i {
   .hamburger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
-
   .box-container {
     grid-template-columns: none;
     grid-template-rows: 1fr 2fr;
@@ -465,29 +463,14 @@ footer i {
   }
 
   h1 {
-    font-size: 4rem;
+    font-size: 6rem;
+  }
+  .box-two {
+    width: 100vw;
   }
   .box-three h2 {
-    font-size: 1.75rem;
+    font-size: 3rem;
     margin-top: 0;
-  }
-
-  .box-four {
-    grid-template-columns: repeat(auto-fit, minmax(125px, 1fr));
-  }
-
-  .icon {
-    height: 40px;
-    margin-right: 5px;
-  }
-
-  .icon-description {
-    margin: 5px;
-    padding: 7.5px 5px;
-  }
-
-  .icon-description p {
-    font-size: 1rem;
   }
 
   .grid-container {
@@ -567,18 +550,43 @@ footer i {
     font-weight: 100;
   }
 
-  .contact-links {
-    padding: 0.5rem;
-    justify-content: space-around;
+  footer {
+    font-size: 1rem;
   }
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 4rem;
+  }
+  .box-three h2 {
+    font-size: 1.75rem;
+  }
+  .box-four {
+    grid-template-columns: repeat(auto-fit, minmax(5rem, 8.5rem));
+  }
+  .icon {
+    height: 35px;
+    margin-right: 5px;
+  }
+
+  .icon-description {
+    margin: 5px;
+    padding: 7.5px 5px;
+  }
+
+  .icon-description p {
+    font-size: 1rem;
+  }
+
   .contact-links a {
     font-size: 1.25rem;
     padding: 0;
     margin: 0.25rem;
   }
-
-  footer {
-    font-size: 1rem;
+  .contact-links {
+    padding: 0.5rem;
+    justify-content: space-around;
   }
 }
 
@@ -606,6 +614,9 @@ footer i {
   .icon-description {
     margin: 5px;
     padding: 2.5px 5px;
+  }
+  .icon-description p {
+    font-size: 0.75rem;
   }
 
   .icon {

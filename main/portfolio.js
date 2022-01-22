@@ -3,7 +3,7 @@
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 const myName = document.querySelector(".box-one");
-const windowWidth = window.matchMedia("(orientation: landscape) and (min-width: 1024px)");
+const windowWidth = window.matchMedia("(orientation: landscape) and (min-width: 1025px)");
 
 
 hamburger.addEventListener("click", mobileMenu);
