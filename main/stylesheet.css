@@ -126,7 +126,7 @@ main {
   padding: 0 1rem 0 3rem;
 }
 .box-two {
-  padding: 1rem;
+  padding: 0 1rem;
   display: grid;
   grid-template-rows: auto auto;
   row-gap: 1.5rem;
@@ -136,21 +136,22 @@ main {
   color: var(--green2);
   font-style: italic;
   font-size: 3rem;
-  margin-top: 3rem;
+  margin-top: 5rem;
   text-align: center;
   letter-spacing: 3px;
 }
 
 .box-four {
+  margin-top: 1.5rem;
   display: grid;
-  grid-template-columns: repeat(3, minmax(8rem, 12rem));
+  grid-template-columns: repeat(3, minmax(8rem, 10.5rem));
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
 }
 .icon {
   display: inline-block;
-  height: 45px;
-  margin-right: 10px;
+  height: 35px;
+  margin-right: 6.125px;
 }
 
 .icon-description {
@@ -563,7 +564,8 @@ footer i {
     font-size: 1.75rem;
   }
   .box-four {
-    grid-template-columns: repeat(auto-fit, minmax(5rem, 8.5rem));
+    margin-top: 0;
+    grid-template-columns: repeat(auto-fit, minmax(5rem, 9rem));
   }
   .icon {
     height: 35px;
