@@ -2,15 +2,28 @@
 
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
+const homePage = document.querySelector(".home");
 const myName = document.querySelector(".box-one");
 const windowWidth = window.matchMedia("(orientation: landscape) and (min-width: 1025px)");
 
 
 hamburger.addEventListener("click", mobileMenu);
+navMenu. addEventListener("click", hideMenu);
+homePage.addEventListener("click", hideMenu);
 
+// show / hide menu when clicked on an icon
 function mobileMenu() {
     hamburger.classList.toggle("active");
     navMenu.classList.toggle("active");
+}
+
+// hide menu when clicked on a section
+function hideMenu() {
+    setTimeout(() => {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+    },300);
+ 
 }
 
 const vid = document.getElementById("background-video");
