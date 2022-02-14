@@ -146,7 +146,6 @@ main {
   display: grid;
   grid-template-columns: repeat(3, minmax(8rem, 10.5rem));
   justify-content: center;
-  /* align-items: center; */
 }
 .icon {
   display: inline-block;
@@ -341,10 +340,11 @@ h2 {
   text-align: center;
 }
 #about-me p {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   padding: 2rem 3rem;
   color: white;
   text-align: justify;
+  line-height: 2.125rem;
 }
 #about-me .arrow-down {
   margin-top: 2rem;
