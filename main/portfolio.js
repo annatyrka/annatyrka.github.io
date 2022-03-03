@@ -22,24 +22,13 @@ function hideMenu() {
     setTimeout(() => {
         hamburger.classList.remove("active");
         navMenu.classList.remove("active");
-    },300);
+    },100);
  
 }
 
 const vid = document.getElementById("background-video");
 vid.playbackRate = 0.75;
 
-
-// add remove line break in h1
-const reportWindowSize = () => {
-        
-        if (windowWidth.matches) {
-            myName.innerHTML="<h1>Anna </br> Tyrka</h1>"
-        } else {
-            myName.innerHTML="<h1>Anna Tyrka</h1>"
-        }
-    
-};
 
 reportWindowSize();
 

@@ -2,7 +2,7 @@
 
 <html lang="en">
   <head>
-    <title>Anna's Portfolio</title>
+    <title>Anna Tyrka | Front End Developer</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./main/stylesheet.css" />
@@ -48,76 +48,80 @@
       <main>
         <!-- welcome -->
         <section id="welcome-section">
-          <div class="box-container">
-            <div class="box-one"></div>
-            <div class="box-two">
-              <div class="box-three">
-                <h2>front-end developer</h2>
-              </div>
-              <div class="box-four">
-                <div class="icon-description">
-                  <img
-                    class="icon"
-                    alt="JavaScript icon"
-                    src="https://img.icons8.com/color/96/000000/javascript--v1.png"
-                  />
-                  <p>JavaScript</p>
-                </div>
-                <div class="icon-description">
-                  <img
-                    class="icon"
-                    alt="React icon"
-                    src="https://img.icons8.com/color/96/000000/react-native.png"
-                  />
-                  <p>React</p>
-                </div>
-                <div class="icon-description">
-                  <img
-                    class="icon"
-                    alt="MUI icon"
-                    src="https://img.icons8.com/color/96/000000/material-ui.png"
-                  />
-                  <p>MUI</p>
-                </div>
-                <div class="icon-description">
-                  <img
-                    class="icon"
-                    alt="HTML icon"
-                    src="https://img.icons8.com/color/96/000000/html-5--v1.png"
-                  />
-                  <p>HTML</p>
-                </div>
-                <div class="icon-description">
-                  <img
-                    class="icon"
-                    alt="CSS icon"
-                    src="https://img.icons8.com/color/96/000000/css3.png"
-                  />
-                  <p>CSS</p>
-                </div>
-                <div class="icon-description">
-                  <img
-                    class="icon"
-                    alt="Sass icon"
-                    src="https://img.icons8.com/color/96/000000/sass.png"
-                  />
-                  <p>Sass</p>
-                </div>
-              </div>
+         
+            <div class="home-page">
+              <h1>Anna Tyrka</h1>
+              <h2>front end developer</h2>
+              <button type="button" onclick="location.href='#projects'" class="projects-button">See projects</button>
             </div>
-          </div>
           <!-- arrow down -->
-          <a href="#projects" class="arrow-down">
+          <div class="arrow-down" id="arrow-down">
+          <a href="#arrow-down" >
             <img
               class="arrow"
               src="./assets/icons/icons8-low-priority-100-2.png"
               alt="arrow down"
             />
           </a>
+        </div> 
         </section>
-
+        <section id="skills">
+          <div class="icons-background">
+            <div class="icons">
+              <div class="icon-description">
+                <img
+                  class="icon"
+                  alt="JavaScript icon"
+                  src="https://img.icons8.com/color/96/000000/javascript--v1.png"
+                />
+                <p>JavaScript</p>
+              </div>
+              <div class="icon-description">
+                <img
+                  class="icon"
+                  alt="React icon"
+                  src="https://img.icons8.com/color/96/000000/react-native.png"
+                />
+                <p>React</p>
+              </div>
+              <div class="icon-description">
+                <img
+                  class="icon"
+                  alt="MUI icon"
+                  src="https://img.icons8.com/color/96/000000/material-ui.png"
+                />
+                <p>MUI</p>
+              </div>
+              <div class="icon-description">
+                <img
+                  class="icon"
+                  alt="HTML icon"
+                  src="https://img.icons8.com/color/96/000000/html-5--v1.png"
+                />
+                <p>HTML</p>
+              </div>
+              <div class="icon-description">
+                <img
+                  class="icon"
+                  alt="CSS icon"
+                  src="https://img.icons8.com/color/96/000000/css3.png"
+                />
+                <p>CSS</p>
+              </div>
+              <div class="icon-description">
+                <img
+                  class="icon"
+                  alt="Sass icon"
+                  src="https://img.icons8.com/color/96/000000/sass.png"
+                />
+                <p>Sass</p>
+              </div>
+            </div>
+            </div>
+        </section>
         <!-- projects -->
         <section id="projects">
+          <h2>projects</h2>
           <div class="grid-container">
             <!-- Product Landing Page -->
             <div class="project">
@@ -155,6 +159,45 @@
                 </div>
               </div>
             </div>
+
+            <!-- Front End Flashcards -->
+            <div class="project">
+              <p class="project-title">Front End Flashcards</p>
+              <a
+                href="https://annatyrka.github.io/front-end-flashcards/"
+                target="_blank"
+                class="profile-link"
+              >
+                <img
+                  class="project-image"
+                  src="./assets/images/drum_machine.png"
+                  alt="Preview of Drum Machine"
+                />
+              </a>
+              <div class="project-bottom">
+                <a
+                  href="https://github.com/annatyrka/front-end-flashcards"
+                  target="_blank"
+                  class="source_code"
+                  >Source code</a
+                >
+                <div>
+                  <img
+                    src="https://img.icons8.com/color/48/000000/react-native.png"
+                    alt="React icon"
+                  />
+                  <img
+                    src="https://img.icons8.com/color/48/000000/javascript--v1.png"
+                    alt="JavaScript icon"
+                  />
+                  <img
+                    src="./assets/icons/icons8-material-ui-48.png"
+                    alt="MUI icon"
+                  />
+                </div>
+              </div>
+            </div>
+
 
             <!-- Drum Machine -->
             <div class="project">
@@ -195,7 +238,7 @@
             </div>
 
             <!-- Pomodoro Clock -->
-            <div class="project">
+           <!-- <div class="project">
               <p class="project-title">Pomodoro Clock</p>
               <a
                 href="https://annatyrka.github.io/pomodoro-clock/"
@@ -230,7 +273,7 @@
                   />
                 </div>
               </div>
-            </div>
+            </div>-->
 
             <!-- Calculator -->
             <div class="project">
@@ -347,8 +390,8 @@
             </div>
 
             
-            <!-- To-do list -->
-            <div class="project">
+          <!-- To-do list -->
+          <!--    <div class="project">
               <p class="project-title">To-Do List</p>
               <a
                 href="https://annatyrka.github.io/to-do-list/"
@@ -382,10 +425,10 @@
                   />
                 </div>
               </div>
-            </div>
+            </div>-->
 
              <!-- Markdown Previewer -->
-             <div class="project">
+         <!--      <div class="project">
               <p class="project-title">Markdown Previewer</p>
               <a
                 href="https://annatyrka.github.io/simple-markdown-previewer/"
@@ -419,29 +462,29 @@
                 />
                 </div>
               </div>
-            </div>
+            </div>-->
             
           </div>
           <!-- arrow down -->
-          <a class="arrow-down" href="#about-me">
+          <!-- <a class="arrow-down" href="#about-me">
             <img
               class="arrow"
               src="./assets/icons/icons8-low-priority-100-2.png"
               alt="arrow down"
             />
-          </a>
+          </a> -->
         </section>
 
         <!-- contact-->
         <section id="about-me">
           <div class="about-me-container">
-            <h2>Who am I?</h2>
+            <h3>Who am I?</h3>
             <p>
               I'm Anna, a self-taught programmer, who loves building things with code. I learnt my first programming language (Visual Basic) at uni and I use it in my current role to automate repetitive tasks, templates
               and reports. However, at the beginning of 2021 I decided to fully
               dive into the world of coding.
             </p>
-            <h2>What do I do?</h2>
+            <h3>What do I do?</h3>
             <p>
               I currently work for a media investment company where I participate in global implementation and
               administration of risk managment systems as well as champion
@@ -450,7 +493,7 @@
           </div>
 
           <!-- arrow down -->
-          <a class="arrow-down" href="#contact">
+          <a class="arrow-up" href="#">
             <img
               class="arrow"
               src="./assets/icons/icons8-low-priority-100-2.png"
@@ -460,7 +503,7 @@
         </section>
 
         <section id="contact">
-          <h2>Get in touch</h2>
+          <h2>contact</h2>
           <div class="contact-links">
             <a
               href="https://github.com/annatyrka"
@@ -487,7 +530,7 @@
           <div class="border-radius"></div>
           <p>
             <small
-              ><i class="far fa-copyright"></i> 2022 annatyrka.github.io | by Anna
+              ><i class="far fa-copyright"></i> 2022 | by Anna
               Tyrka</small
             >
           </p>
