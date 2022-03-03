@@ -552,10 +552,15 @@ footer i {
 
 @media (max-width: 600px) {
   /* -- hamburger menu -- */
+
+  nav {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .nav-menu {
     position: fixed;
     right: -100%;
-    top: 95px;
+    top: 80px;
     flex-direction: column;
     background-image: linear-gradient(to right, #002080, #bf408a);
     width: 100%;
