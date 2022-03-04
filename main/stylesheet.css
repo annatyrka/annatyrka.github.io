@@ -33,7 +33,7 @@ nav {
   background-image: linear-gradient(to right, #002080, #bf408a);
   position: fixed;
   max-width: 1650px;
-  width: 100%;
+  width: 100vw;
   height: 85px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -98,9 +98,10 @@ video {
   top: 0;
   object-fit: fill;
   max-width: 1650px;
-  width: 100vw;
   z-index: -3;
   opacity: 0.3;
+  width: 100%;
+  display: flex;
 }
 
 main {
