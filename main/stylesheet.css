@@ -296,7 +296,7 @@ section h2 {
   font-size: 1.4rem;
   margin: auto 0.25rem;
   margin-bottom: 0.75rem;
-  font-weight: 900;
+  font-weight: 500;
 }
 
 .project img {
@@ -652,6 +652,16 @@ footer i {
     height: 40vh;
   }
 
+  .grid-container {
+    grid-template-columns: repeat(auto-fit, minmax(270px, 375px));
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    margin: 1rem;
+  }
+
+  .project-title {
+    font-size: 1.25rem;
+  }
   .icons {
     display: grid;
     grid-template-columns: repeat(2, minmax(8rem, 9.75rem));
@@ -716,8 +726,9 @@ footer i {
   /* -- projects -- */
 
   .grid-container {
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    margin: 0.5rem;
   }
 
   .project img {
