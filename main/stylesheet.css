@@ -20,7 +20,7 @@
 body {
   font-family: "Roboto", sans-serif;
   color: var(--mainwhite);
-  background-color: var(--main-grey);
+  background-color: #202020;
 }
 
 .wrapper {
