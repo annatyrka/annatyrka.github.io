@@ -414,7 +414,8 @@ p.js {
   background-color: #1f1f1f;
   border-radius: 10px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 2.5rem;
+  padding-bottom: 3rem;
   box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000,
     -11px -22px 23px 0px rgba(0, 0, 0, 0);
 }
@@ -423,13 +424,14 @@ p.js {
   font-size: 1.75rem;
   color: var(--blue);
   text-align: center;
+  padding: 1rem;
 }
 #about-me p {
-  font-size: 1.3rem;
-  padding: 2rem 3rem;
+  font-size: 1.4rem;
+  padding: 1rem 3rem;
   color: white;
   text-align: justify;
-  line-height: 2.125rem;
+  line-height: 2.25rem;
 }
 #about-me .arrow-down {
   margin-top: 2rem;
