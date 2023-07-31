@@ -1,62 +1,98 @@
+import '@fontsource/roboto/300.css';
+import '@fontsource/roboto/400.css';
+import '@fontsource/roboto/500.css';
+import '@fontsource/roboto/700.css';
 import React from "react";
 import Card from '@mui/material/Card';
-import { Box, CardMedia, CardContent, CardActions, Typography, Button, ImageList, ImageListItem } from "@mui/material";
+import { CardMedia, CardContent, CardActions, Typography, Button, Grid } from "@mui/material";
 import Link from '@mui/material/Link';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import './ProjectCard.styles.scss';
+
 const cardStyles = {
   display: 'flex',
   flexDirection: "column",
   justifyContent: "center",
   alignItems: "center",
-  padding: "1.25rem",
+  padding: "1rem 1.5rem",
   borderRadius: "5px",
   color: "#f0f0f0",
-  fontWeight: "light",
+  width: "325px",
   backgroundColor: "#131212",
   boxShadow: "-10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, -11px -22px 23px 0px rgba(0, 0, 0, 0)"
 }
 
 const imageStyles = {
-  objectFit: "cover",
+  objectFit: 'cover',
   borderRadius: "0.5rem",
-  marginBottom: "1rem"
+  margin: '0 auto',
+  height: "10rem",
+  width: "17rem",
+  padding: 0,
+  '&:hover': {
+    transitionDuration: "0.5s",
+    transitionProperty: "transform",
+    transitionTimingFunction: "ease-in-out",
+    transform: "scale(1.05)"
+    },
+    '&:not(:hover)': {
+      transitionDuration: "0.5s",
+      transitionProperty: "transform",
+      transitionTimingFunction: "ease-in-out",
+      transform: "scale(1)"
+      }
+}
+const projectDescrptionStyles = {
+  paddingTop: "1rem",
+  fontSize: "0.9rem",
+  fontWeight: "300",
+  left: "-30%"
 }
 
 const cardActionStyles = {
   display: "flex",
   width: "100%",
-  padding: "20px",
-  height: "100px",
+  padding: 0,
+  height: "70px",
   flexDirection: "row",
   justifyContent: "space-around",
   alignItems: "center"
 }
 
 const buttonStyles = {
+  fontSize: "0.75rem",
+  fontWeight: "300",
+  padding: "5px",
+  width: "45%",
   '&:hover': {
 color: "rgb(24, 190, 174)"
 }
 }
-const iconWrap = {
-  position: "relative",
-  overflow: "hidden",
-  border: "3px solid #73AD21"
+
+const projectIconsStyles = {
+  width: "40%",
 }
 
-const iconDescription = {
+const iconWrapStyles = {
+  position: "relative",
+  '&:hover': {
+    cursor: "pointer"
+  }
+}
+
+const iconDescriptionStyles = {
   position: "absolute",
   top: "0px",
   left: "0px",
-  bottom: "0px",
-  fontSize: "0.75rem",
-  opacity:"1",
+  bottom: "21px",
+  fontSize: "0.7rem",
+  opacity:"0",
+  color: "white",
   background: "rgba(97, 97, 97, 0.9)",
-  transform: "translateY(-70%)",
+  transform: "translateY(-60%)",
   transition: "opacity 200ms",
-  marginBottom: "0px",
   borderRadius: "4px",
-  display: "inline",
-  zIndex: "3",
+  padding: "2px 6px",
     '&:hover': {
     opacity:"1",
   }
@@ -66,9 +102,9 @@ const ProjectCard = ({ title, link, sourceCode, image, description, techIcons }:
 
   <Card sx={cardStyles}>
   
-    <Typography variant="h6">{title}</Typography>
+    <Typography variant="h6" fontWeight={300}>{title}</Typography>
     <CardContent>
-      <Link href={link}>
+      <Link href={link} target="_blank" rel="noopener">
         <CardMedia
         component="img"
         alt={title}
@@ -76,26 +112,31 @@ const ProjectCard = ({ title, link, sourceCode, image, description, techIcons }:
         sx={imageStyles}
         />
       </Link>
-      <Typography>{description}</Typography>
+      <Typography variant="body2" align="center" sx={projectDescrptionStyles}>{description}</Typography>
     </CardContent>
     <CardActions sx={cardActionStyles}>
       <Button sx={buttonStyles} variant="outlined" size="small" href={sourceCode} startIcon={<GitHubIcon />} color="inherit" >Source Code</Button>
-      <ImageList sx={{ width: 120, height: 50 }} cols={3} rowHeight={50}>
-        {techIcons.map((icon: any) => (
-          <Box sx= {iconWrap}>
-            <Typography sx={iconDescription}>{icon.title}</Typography>
-            <ImageListItem key={icon.img} sx={{height: "20px", position: "absolute"}} 
-            >
+        <Grid container spacing={0.5} sx={projectIconsStyles}>
+        {techIcons.map((icon: any, i: number) => (
+       
+
+            <Grid item xs={4} key={i} sx={iconWrapStyles}  className="iconWrap">
+                <Typography
+                  title={icon.title}
+                  sx={iconDescriptionStyles}
+                  className="iconDescription"      
+                >{icon.title}</Typography>
                 <img
-                src={icon.img}
-                // srcSet={`${icon.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
-                alt={icon.title}
-                loading="lazy"
+                  src={icon.img}
+                  alt={icon.title}
+                  height="35px"
+                  loading="lazy"
                 />
-            </ImageListItem>
-          </Box>
+
+            </Grid>
+ 
         ))}
-      </ImageList>
+        </Grid>
     </CardActions>
   </Card>
 )

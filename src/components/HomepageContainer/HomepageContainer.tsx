@@ -21,7 +21,7 @@ const imageStyles = {
   flexGrow: 1,
   opacity: '0.4',
   marginTop: 9,
-  height: '90vh',
+  height: '95vh',
   width: '60vw',
   zIndex:1,
   objectFsit: 'contain',
