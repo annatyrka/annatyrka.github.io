@@ -99,9 +99,15 @@ const techIconsImg = [
 
 const ProjectsGrid = () => (
 
-  <Grid container spacing={3} 
+  <Grid container 
   direction="row"
-  width="90%"
+  width='100%'
+ 
+  justifyContent="center"
+  alignItems="center"
+  rowSpacing={4} columnSpacing={{ xs: 4 }}
+
+
   >
          
          {projectData.map(project => {
@@ -115,7 +121,7 @@ const ProjectsGrid = () => (
             }
           })
            return (
-            <Grid item xs={4}>
+            <Grid item  key={title} >
               <ProjectCard
                 title={title}
                 link={link}
@@ -124,7 +130,7 @@ const ProjectsGrid = () => (
                 sourceCode={sourceCode}
                 key={title}
                 techIcons={icons}
-          />
+          />      
              </Grid> )
     })}
 

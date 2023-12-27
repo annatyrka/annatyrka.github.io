@@ -16,7 +16,8 @@ const cardStyles = {
   alignItems: "center",
   padding: "1rem 1.5rem",
   borderRadius: "5px",
-  color: "#f0f0f0",
+  // color: "#f0f0f0",
+  color: 'white',
   width: "325px",
   backgroundColor: "#131212",
   boxShadow: "-10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, -11px -22px 23px 0px rgba(0, 0, 0, 0)"

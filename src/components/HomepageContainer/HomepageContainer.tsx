@@ -3,13 +3,17 @@ import CardMedia from '@mui/material/CardMedia';
 import imageBg from '../../assets/pawel-czerwinski-z7prq6BtPE4-unsplash.jpg';
 import { Box, Typography } from "@mui/material";
 
-const containerStyles = {
+const containerStyles = (theme:any) => ({
   display:'flex',
   flexWrap: 'nowrap',
   justifyContent: 'center',
   alignItems: 'center',
-  background: 'linear-gradient(90deg, rgba(5,8,16,1) 0%, rgba(0,0,0,1) 50%)'
-  }
+  objectFit: 'contain',
+  background: 'linear-gradient(90deg, rgba(5,8,16,1) 0%, rgba(0,0,0,1) 50%)',
+  [theme.breakpoints.down('sm')]: {
+    height: '100vh',
+  },
+  })
 
 const boxStyles = {
   flexGrow: 1,
@@ -17,14 +21,13 @@ const boxStyles = {
   zIndex: 1,
 }
 
-const imageStyles = {
+const imageStyles = (theme:any) => ({
   flexGrow: 1,
   opacity: '0.4',
   marginTop: 9,
   height: '95vh',
-  width: '60vw',
+  width: '50%',
   zIndex:1,
-  objectFsit: 'contain',
   animation: "image-in 1.5s cubic-bezier(0.5, 0, 0.1, 1) 2s backwards",
 
 "@keyframes image-in": {
@@ -34,14 +37,20 @@ const imageStyles = {
     "to": {
       clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)"
     }
-  }
-}
+  },
+  [theme.breakpoints.down('sm')]: {
+    display: "none",
+  },
+  [theme.breakpoints.up('xl')]: {
+    width: '60%',
+  },
+})
 
-const nameStyles = {
+const nameStyles = (theme:any) =>({
   display: 'inline-block;',
   paddingLeft: 17,
   fontFamily: "Poppins, sans-serif",
-  fontSize: "4vw",
+  fontSize: "4rem",
   zIndex: 3,
   letterSpacing: "3px",
   animation: 'inner-left 1s 1s ease both, text-clip 1s 0s cubic-bezier(0.5, 0, 0.1, 1) both',
@@ -52,9 +61,45 @@ const nameStyles = {
     "to": {
       transform: "none"
     }
-  }
-}
+  },
+  [theme.breakpoints.down('sm')]: {
+    fontSize: "3.5rem",
+    textAlign: "center",
+    padding: "1rem"
+  },
+    [theme.breakpoints.up('xl')]: {
+      fontSize: "4.5rem",
+    },
 
+})
+
+const titleStyles= (theme:any) => ({
+  animation: "text-clip 1s 0s cubic-bezier(0.5, 0, 0.1, 1) both",
+  animationDelay: "0.75s",
+  paddingLeft: 17,
+  fontFamily: "Prata",
+  color: "#18beae",
+  fontSize: "3rem",
+  zIndex: 3,
+  letterSpacing: "3px",
+
+  "@keyframes text-clip": {
+    "from": {
+      clipPath: "polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%)"
+    },
+    "to": {
+      clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)"
+    }
+  },
+  [theme.breakpoints.down('sm')]: {
+    fontSize: "2.5rem",
+    textAlign: "center",
+    padding: "1rem"
+  },
+  [theme.breakpoints.up('xl')]: {
+    fontSize: "3.5rem",
+  },
+})
 
 
 
@@ -98,29 +143,20 @@ const titleOuterStyles = {
   }
 }
 
-const titleStyles={
-  animation: "text-clip 1s 0s cubic-bezier(0.5, 0, 0.1, 1) both",
-  animationDelay: "0.75s",
-  paddingLeft: 17,
-  fontFamily: "Prata",
-  color: "#18beae",
-  fontSize: "2.9vw",
-  zIndex: 3,
-  letterSpacing: "3px",
+const textBoxStyles = (theme:any) => ({
 
-  "@keyframes text-clip": {
-    "from": {
-      clipPath: "polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%)"
-    },
-    "to": {
-      clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)"
-    }
-  }
-}
+  width: '40vw',
+  [theme.breakpoints.down('sm')]: {
+    width: '100vw',
+    // alignText: "center",
+    zIndex: 3
+  },
+})
+
 
 const HomepageContainer = () => (
   <Box  sx={containerStyles}>
-    <Box  display='inline-block' sx={{...boxStyles, width: '40vw' }}>
+    <Box  display='inline-block' sx={{textBoxStyles, ...boxStyles}}>
      <Box sx={textOuterStyles} >
       <Box sx={nameOuterStyles}>     
           <Typography sx={nameStyles}>ANNA TYRKA</Typography>
@@ -130,9 +166,7 @@ const HomepageContainer = () => (
       </Box>
       </Box>
     </Box>
-
       <CardMedia component="img" src={imageBg} sx={imageStyles}  />
-
   </Box>
 
 )
