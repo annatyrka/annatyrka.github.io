@@ -24,7 +24,7 @@ const boxStyles = {
 const imageStyles = (theme:any) => ({
   flexGrow: 1,
   opacity: '0.4',
-  marginTop: 9,
+  marginTop: 0,
   height: '95vh',
   width: '50%',
   zIndex:1,

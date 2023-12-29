@@ -56,7 +56,7 @@ const AboutContainer = () => (
   <Box sx={containerStyles} id="about">
     <SectionTitle section="About me"/>
     <Box sx={aboutMeTextStyles}>
-        <Typography fontWeight={300} textAlign='center' fontSize="1.5rem" letterSpacing="1px"   marginBottom={3}>I'm Anna, a full stack engineer who loves bringing ideas to life through code. From crafting front-end interfaces to diving into the intricacies of back-end logic, I'm here to create meaningful digital experiences.</Typography>
+        <Typography fontWeight={300} textAlign='center' fontSize="1.5rem" letterSpacing="1px"   marginBottom={3}>I'm Anna, a full-stack engineer who loves bringing ideas to life through code. From crafting front-end interfaces to diving into the logic of back-end, I'm here to create meaningful digital experiences.</Typography>
         <Typography textAlign='center' fontSize="2rem" paddingTop={3.5} letterSpacing="1px"  sx={underlined}> Let's build something amazing together!</Typography>
     </Box>
     </Box>

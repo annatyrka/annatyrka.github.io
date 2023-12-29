@@ -84,7 +84,7 @@ import SkillCard from '../SkillCard/SkillCard';
     paddingBottom: "100px",
     background: 'linear-gradient(90deg, rgba(5,8,16,1) 0%, rgba(0,0,0,1) 50%)',
     [theme.breakpoints.down('sm')]: {
-      padding: "5px",
+      padding: "25px",
     },
     })
   

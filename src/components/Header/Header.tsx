@@ -63,9 +63,10 @@ const CustomButton = styled(Button)`
 `;
 
 const StyledDrawer = styled(Drawer)`
+
   .MuiDrawer-paper {
-    background: radial-gradient(circle, rgba(40,28,76,1) 0%, rgba(16,16,26,1) 100%); 
-    width: 50%;
+    top: 85px;
+    background: radial-gradient(circle, rgba(40,28,76,1) 0%, rgba(16,16,26,1) 100%);  
     `
 
 const StyledIconButton = styled(IconButton)`
@@ -84,21 +85,21 @@ const HamburgerMenu = () => {
   };
 
   return (
-    <div>
+    <>
       <StyledIconButton color='secondary' onClick={toggleDrawer(true)}>
         <MenuIcon />
       </StyledIconButton>
       <StyledDrawer anchor="top" open={open} onClose={toggleDrawer(false)}>
         <List>
           {/* Add your menu items here */}
-          {navItems.map((item, key) => (
-                  <ListItem key={item}>
+          {navItems.map((item) => (
+                  <ListItem key={item} >
                     <StyledListItemText primary={item.charAt(0).toUpperCase() + item.slice(1)} />
                   </ListItem>
           ))}
         </List>
       </StyledDrawer>
-    </div>
+    </>
   );
 };
 
