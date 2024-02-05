@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.5abb950c.css",
-    "main.js": "/static/js/main.1385f5f6.js",
+    "main.js": "/static/js/main.0fcc7b4e.js",
     "static/media/pawel-czerwinski-z7prq6BtPE4-unsplash.jpg": "/static/media/pawel-czerwinski-z7prq6BtPE4-unsplash.55d459d2c02d9d3f1462.jpg",
     "static/media/plant-store.png": "/static/media/plant-store.a475b25171baf2374128.png",
     "static/media/react_calculator.png": "/static/media/react_calculator.387536ff47f83c69a5e4.png",
@@ -69,10 +69,10 @@
     "static/media/roboto-greek-ext-700-normal.woff": "/static/media/roboto-greek-ext-700-normal.249853776d22a271b2b5.woff",
     "index.html": "/index.html",
     "main.5abb950c.css.map": "/static/css/main.5abb950c.css.map",
-    "main.1385f5f6.js.map": "/static/js/main.1385f5f6.js.map"
+    "main.0fcc7b4e.js.map": "/static/js/main.0fcc7b4e.js.map"
   },
   "entrypoints": [
     "static/css/main.5abb950c.css",
-    "static/js/main.1385f5f6.js"
+    "static/js/main.0fcc7b4e.js"
   ]
 }
