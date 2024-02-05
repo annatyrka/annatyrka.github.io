@@ -47,7 +47,7 @@ const projectData = [
     title:"Local Weather App",
     link:"https://annatyrka.github.io/local-weather-app/",
     image: weatherAppImage,
-    description:"Simple calculator built with React & JavaScript",
+    description:"App that shows the current weather based on user's location",
     sourceCode:"https://github.com/annatyrka/local-weather-app",
     techIcons: ["React", "JavaScript", "MUI"]
   },
@@ -63,7 +63,7 @@ const projectData = [
     title:"Quote Generator",
     link:"https://annatyrka.github.io/random-quote-machine/",
     image: quoteGeneratorImage,
-    description:"Productivity app that helps you stay focused and work effectively",
+    description:"App that fetches a random quote and its author",
     sourceCode:"https://github.com/annatyrka/random-quote-machine",
     techIcons: ["React", "JavaScript", "MUI"]
   }
